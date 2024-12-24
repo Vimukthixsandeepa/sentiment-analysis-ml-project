@@ -5,8 +5,9 @@ Here's how the application works:
 
 
 
-![Demo GIF](![webapp](https://github.com/user-attachments/assets/998a60e0-83ea-4550-ad47-5c9e2db91bce)
-)
+![alt text](![webapp](https://github.com/user-attachments/assets/b898a91f-eb07-4d7f-8d07-677027f17d40)
+
+
 
 ## Overview
 This project is a web-based sentiment analysis application that classifies text reviews as either positive or negative feedback. Built with Flask and machine learning, it provides real-time sentiment analysis of user input.
