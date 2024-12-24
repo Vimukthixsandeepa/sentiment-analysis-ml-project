@@ -1,4 +1,12 @@
 # Sentiment Analysis Web Application
+## Demo
+
+Here's how the application works:
+
+
+
+![Demo GIF](![webapp](https://github.com/user-attachments/assets/998a60e0-83ea-4550-ad47-5c9e2db91bce)
+)
 
 ## Overview
 This project is a web-based sentiment analysis application that classifies text reviews as either positive or negative feedback. Built with Flask and machine learning, it provides real-time sentiment analysis of user input.
