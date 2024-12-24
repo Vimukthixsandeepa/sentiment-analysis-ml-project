@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Sentiment Analysis</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row mt-5">
+            <!-- Left Section with Image -->
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center">
+                    <img src="{{ url_for('static', filename='gg.jpeg') }}" alt="Sentiment Image" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Right Section for Feedback -->
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h3 class="text-center">Leave Your Feedback</h3>
+                        <div class="row mb-4">
+                            <div class="col">
+                                <p><strong>Positive Sentiments:</strong> {{ data.positive }}</p>
+                                <p><strong>Negative Sentiments:</strong> {{ data.negative }}</p>
+                            </div>
+                        </div>
+
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="feedbackText">Your Review:</label>
+                                <textarea id="feedbackText" name="text" class="form-control" rows="4" placeholder="Write your feedback here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit Feedback</button>
+                        </form>
+
+                        <h5 class="mt-5">Recent Reviews</h5>
+                        <div class="comment-section">
+                            {% for review in data.reviews %}
+                                <div class="review-item bg-light p-3 mb-2 rounded">
+                                    <p>{{ review }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

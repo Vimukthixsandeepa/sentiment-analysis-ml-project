@@ -1,0 +1,16 @@
+2024-12-24 21:57:56,346 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-24 21:57:56,359 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-24 21:58:42,403 - INFO - 127.0.0.1 - - [24/Dec/2024 21:58:42] "GET / HTTP/1.1" 200 -
+2024-12-24 21:58:42,632 - INFO - 127.0.0.1 - - [24/Dec/2024 21:58:42] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+2024-12-24 21:58:43,122 - INFO - 127.0.0.1 - - [24/Dec/2024 21:58:43] "[36mGET /static/gg.jpeg HTTP/1.1[0m" 304 -
+2024-12-24 21:58:58,054 - INFO - Received text: i love this product
+
+2024-12-24 21:58:58,075 - INFO - Preprocessed text: 0    love product
+Name: tweet, dtype: object
+2024-12-24 21:58:58,090 - INFO - Vectorized text: [[0. 0. 0. ... 0. 0. 0.]]
+2024-12-24 21:58:58,092 - INFO - Prediction: positive feedback
+2024-12-24 21:58:58,095 - INFO - 127.0.0.1 - - [24/Dec/2024 21:58:58] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-12-24 21:58:58,114 - INFO - 127.0.0.1 - - [24/Dec/2024 21:58:58] "GET / HTTP/1.1" 200 -
+2024-12-24 21:58:58,168 - INFO - 127.0.0.1 - - [24/Dec/2024 21:58:58] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+2024-12-24 21:58:58,186 - INFO - 127.0.0.1 - - [24/Dec/2024 21:58:58] "[36mGET /static/gg.jpeg HTTP/1.1[0m" 304 -
